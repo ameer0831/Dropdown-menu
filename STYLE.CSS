@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500,600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: rgb(177, 207, 207);
+}
+.select-menu{
+    width:380px;
+    margin:150px auto;
+}
+.select-menu{
+    width: 380px;
+    margin:150px auto;
+}
+.select-menu .select-btn{
+    display:flex;
+    height: 55px;
+    background:linear-gradient(to right,rgb(99, 125, 177),rgb(132, 244, 132));
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius:8px;
+    align-items:center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.4s;
+    
+}
+.select-menu.active .select-btn i{
+    transform:rotate(-180deg);
+    }
+.select-menu .options{
+    position:relative;
+    padding: 20px;
+    margin-top:10px;
+    border-radius:8px;
+    background:rgb(164, 227, 227); 
+    box-shadow: 0 0 3px rgba(16, 17, 16, 0.1);
+}
+.select-menu.active .options{
+  display:none;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor:pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: white;
+    margin-top: 10px;
+}
+.options option:hover{
+    background: #f7f3f3;
+}
+.option i{
+    font-size:25px;
+    margin-right: 12px;
+}
+.option .option-text{
+font-size: 18px;
+color: #333;
+}
+.option .hover{
+color: rgb(153, 213, 213);
+
+}
